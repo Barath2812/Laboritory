@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biomedical & Molecular Biology Research Services</title>
+
+<style>
+:root{
+  --primary:#0f766e;
+  --secondary:#14b8a6;
+  --bg:#f4f7f8;
+  --card:#ffffff;
+  --border:#e2e8f0;
+  --text:#1f2937;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+  background:linear-gradient(180deg,#eef7f6,#f9fbfb);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  padding:42px 20px;
+  text-align:center;
+}
+header h1{
+  margin:0;
+  font-size:30px;
+  letter-spacing:.6px;
+}
+header p{
+  margin-top:10px;
+  font-size:15px;
+  opacity:.95;
+}
+
+/* SECTIONS */
+section{ padding:30px 6%; }
+
+.section-card{
+  background:var(--card);
+  border-radius:16px;
+  padding:26px;
+  box-shadow:0 12px 28px rgba(0,0,0,.08);
+  margin-bottom:36px;
+  animation:fadeUp .6s ease;
+}
+
+h2{
+  color:var(--primary);
+  margin:0 0 18px;
+  font-size:22px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+h2::before{
+  content:"";
+  width:6px;
+  height:30px;
+  background:var(--primary);
+  border-radius:4px;
+}
+
+/* TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+}
+th, td{
+  border:1px solid var(--border);
+  padding:12px 14px;
+  text-align:left;
+  vertical-align:top;
+}
+th{
+  background:#e6f4f1;
+  font-weight:600;
+  font-size:14px;
+}
+td{ font-size:14px; }
+td strong{
+  font-size:15px;
+  color:var(--primary);
+}
+
+.subtext{
+  font-size:12px;
+  color:#555;
+  margin-top:5px;
+  line-height:1.4;
+}
+
+tr:hover{
+  background:#f1faf9;
+  transition:.2s;
+}
+
+/* FOOTER */
+footer{
+  background:linear-gradient(135deg,var(--primary),var(--secondary));
+  color:white;
+  text-align:center;
+  padding:18px;
+  font-size:14px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header h1{font-size:22px;}
+  section{padding:20px;}
+  th, td{font-size:13px; padding:10px;}
+  h2{font-size:19px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Biomedical & Molecular Biology Research Services</h1>
+  <p>In-Vitro • Gene Expression • Zebrafish • Flow Cytometry</p>
+</header>
+
+<section>
+<div class="section-card">
+<h2>In-Vitro Assays</h2>
+<table>
+<tr><th>Analysis</th><th>Internal (₹)</th><th>External (₹)</th></tr>
+
+<tr>
+<td><strong>MTT Assay</strong>
+<div class="subtext">• 5 different concentrations<br>• Including images</div>
+</td><td>3000 / sample</td><td>4000 / sample</td>
+</tr>
+
+<tr><td>DPPH Assay</td><td>1000 / sample</td><td>1500 / sample</td></tr>
+<tr><td>PI Staining</td><td>1000 / sample</td><td>2000 / sample</td></tr>
+<tr><td>Apoptotic Dual Staining (AO/EB)</td><td>1500 / sample</td><td>2000 / sample</td></tr>
+<tr><td>DCFH-DA Staining</td><td>1500 / sample</td><td>2000 / sample</td></tr>
+<tr><td>Rhodamine 123</td><td>1500 / sample</td><td>2000 / sample</td></tr>
+
+<tr>
+<td><strong>Cell Migration Assay</strong>
+<div class="subtext">• 5 concentrations • only 24 hours</div>
+</td><td>2500 / sample</td><td>3000 / sample</td>
+</tr>
+
+<tr>
+<td><strong>Cell Migration Assay</strong>
+<div class="subtext">• 5 concentrations • 0, 24, 48 hours</div>
+</td><td>3000 / sample</td><td>3500 / sample</td>
+</tr>
+
+<tr>
+<td><strong>Wound Healing Assay</strong>
+<div class="subtext">• 5 concentrations • only 24 hours</div>
+</td><td>2500 / sample</td><td>3000 / sample</td>
+</tr>
+
+<tr>
+<td><strong>Wound Healing Assay</strong>
+<div class="subtext">• 5 concentrations • 0, 24, 48 hours</div>
+</td><td>3000 / sample</td><td>3500 / sample</td>
+</tr>
+
+<tr><td>Inverted Fluorescence Microscope</td><td>500 / hour</td><td>600 / hour</td></tr>
+<tr><td>Protein Quantification</td><td>250 / sample</td><td>400 / sample</td></tr>
+<tr><td>DNA Isolation</td><td>2000 / sample</td><td>2500 / sample</td></tr>
+
+</table>
+</div>
+</section>
+
+<section>
+<div class="section-card">
+<h2>Gene Expression Studies</h2>
+<table>
+<tr><th>Test</th><th>Internal (₹)</th><th>External (₹)</th></tr>
+
+<tr><td>Total RNA Isolation (Trizol)</td><td>1000 / sample</td><td>1500 / sample</td></tr>
+<tr><td>cDNA Conversion</td><td>350 / sample</td><td>500 / sample</td></tr>
+<tr><td>RT-PCR (Triplicate)</td><td>250 / triplicate</td><td>500 / triplicate</td></tr>
+<tr><td>Multiplate Reader</td><td>200 / plate</td><td>300 / plate</td></tr>
+<tr><td>ChemiDoc XRS+ System</td><td>250 / hour</td><td>300 / hour</td></tr>
+<tr><td>SDS-PAGE</td><td>2000 / run</td><td>2500 / run</td></tr>
+
+<tr>
+<td><strong>Western Blotting</strong>
+<div class="subtext">• Without antibodies<br>• Extra charges for antibodies</div>
+</td><td>3000 / sample</td><td>3500 / sample</td>
+</tr>
+
+<tr><td>RT-PCR / Sample</td><td>3000 / triplicate</td><td>4000 / triplicate</td></tr>
+<tr><td>Multiplate Reader</td><td>2000 / plate</td><td>3000 / plate</td></tr>
+
+</table>
+</div>
+</section>
+
+<section>
+<div class="section-card">
+<h2>Zebrafish Studies</h2>
+<table>
+<tr><th>Study</th><th>Internal (₹)</th><th>External (₹)</th></tr>
+
+<tr>
+<td><strong>Zebrafish Embryo Toxicity</strong>
+<div class="subtext">• Up to 48 hours post-fertilization<br>• Data & Graph</div>
+</td><td>3000 / sample</td><td>3500 / sample</td>
+</tr>
+
+<tr>
+<td><strong>Zebrafish Embryo Toxicity with Images</strong>
+<div class="subtext">• Up to 48 hours post-fertilization<br>• Images for each concentration, Data & Graph</div>
+</td><td>3000 / sample</td><td>3500 / sample</td>
+</tr>
+
+</table>
+</div>
+</section>
+
+<section>
+<div class="section-card">
+<h2>Flow Cytometry & Additional Services</h2>
+<table>
+<tr><th>Analysis</th><th>Internal (₹)</th><th>External (₹)</th></tr>
+
+<tr><td>Flow Cytometry Analyzer Usage</td><td>2500 / hour</td><td>3500 / hour</td></tr>
+<tr><td>Cell Cycle Analysis</td><td>3000 / sample</td><td>4000 / sample</td></tr>
+<tr><td>Annexin V Staining</td><td>3500 / sample</td><td>4000 / sample</td></tr>
+
+<tr>
+<td><strong>Ultra Centrifuge</strong>
+<div class="subtext">• 70,000 Max RPM</div>
+</td><td>1000 / hour</td><td>1500 / hour</td>
+</tr>
+
+<tr><td>Necrosis Assay</td><td>250 / sample</td><td>400 / sample</td></tr>
+<tr><td>Anti-inflammatory Assay</td><td>250 / sample</td><td>400 / sample</td></tr>
+
+</table>
+</div>
+</section>
+
+<footer>
+<p>For academic & research use only • Charges subject to revision</p>
+</footer>
+
+</body>
+</html>
